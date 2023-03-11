@@ -1,9 +1,11 @@
-import React from 'react'
+import Movies from "../components/Movies"
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+	return (
+		<div className="grid grid-cols-fluid gap-10 md:mx-20">
+			<Movies />
+		</div>
+	)
 }
 
 export default Home
