@@ -7,7 +7,7 @@ function Movies() {
 	const { isLoading, error, data } = useQuery(["movies"], () =>
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/popular?api_key=8e341bd2d7b18eef49d36961ca7eab1e&language=pl-PL`
+				`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=pl-PL`
 			)
 			.then(res => {
 				return res.data
@@ -26,6 +26,7 @@ function Movies() {
 				data.results.map((movie, index) => (
 					<Movie
 						key={index}
+						id={movie.id}
 						title={movie.title}
 						poster={movie.poster_path}
 						desc={movie.overview}
