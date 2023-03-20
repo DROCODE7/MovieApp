@@ -21,7 +21,7 @@ function Movies() {
 			{error ? (
 				<p>Wystąpił błąd...</p>
 			) : isLoading ? (
-				<p>Ładowanie filmów...</p>
+				<p className="text-center animate-pulse text-sm">Ładowanie filmów...</p>
 			) : (
 				data.results.map((movie, index) => (
 					<Movie
