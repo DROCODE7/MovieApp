@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar"
 function Home() {
 	return (
 		<div className=" text-teal-500">
-			<Navbar />
 			<h2 className="mx-6 text-teal-400 text-xl md:text-3xl md:mx-20 mb-4 font-semibold uppercase mt-20 border-b-2 border-primary py-3 tracking-wide">
 				Popularne filmy
 			</h2>

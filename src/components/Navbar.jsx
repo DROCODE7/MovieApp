@@ -4,7 +4,7 @@ function Navbar() {
 	return (
 		<nav className="p-3 border-gray-200 rounded bg-gray-900 text-white">
 			<div className="container flex flex-wrap items-center justify-between mx-auto">
-				<a href="#" className="flex items-center">
+				<a href="/" className="flex items-center">
 					<img src={logo} className="h-6 mr-3 sm:h-10 rounded-full bg-white" alt="Movie App Logo" />
 					<span className="self-center text-xl font-semibold whitespace-nowrap">
 						Katalog filmów
