@@ -5,8 +5,12 @@ function Navbar() {
 		<nav className="p-3 border-gray-200 rounded bg-gray-900 text-white">
 			<div className="container flex flex-wrap items-center justify-between mx-auto">
 				<a href="/" className="flex items-center">
-					<img src={logo} className="h-6 mr-3 sm:h-10 rounded-full bg-white" alt="Movie App Logo" />
-					<span className="self-center text-xl font-semibold whitespace-nowrap">
+					<img
+						src={logo}
+						className="h-6 mr-3 sm:h-10 rounded-full bg-white"
+						alt="Movie App Logo"
+					/>
+					<span className="self-center text-xl font-semibold whitespace-nowrap text-teal-400">
 						Katalog filmów
 					</span>
 				</a>
@@ -30,7 +34,7 @@ function Navbar() {
 					</svg>
 				</button>
 				<div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-					<ul className="flex flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
+					{/* <ul className="flex flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
 						<li>
 							<a
 								href="/"
@@ -46,7 +50,7 @@ function Navbar() {
 								Losuj
 							</a>
 						</li>
-					</ul>
+					</ul> */}
 				</div>
 			</div>
 		</nav>

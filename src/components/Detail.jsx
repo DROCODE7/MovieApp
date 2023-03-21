@@ -17,16 +17,21 @@ export default function Detail() {
 
 	return (
 		<>
-			{isLoading ? (
-				"Ładowanie..."
+			{error ? (
+				<p>Coś poszło nie tak...</p>
+			) : isLoading ? (
+				<p>Ładowanie...</p>
 			) : (
 				<div className="flex flex-col md:flex-row justify-center items-center space-x-5 mx-6 mt-6 md:mx-24 text-center">
-					<button className="text-white rounded-md p-4" onClick={() => navigate(-1)}>
+					<button
+						className="text-white rounded-md p-2 hover:bg-teal-500 duration-300 ease-in"
+						onClick={() => navigate(-1)}>
 						<span class="material-symbols-outlined">arrow_back</span>
 					</button>
 					<img
 						className="rounded-2xl h-60"
 						src={`https://image.tmdb.org/t/p/original${data.poster_path}`}
+						alt={`${data.title}`}
 					/>
 					<div className="flex flex-col text-teal-400 space-y-4">
 						<h2 className="text-3xl p-2">{data.title}</h2>
