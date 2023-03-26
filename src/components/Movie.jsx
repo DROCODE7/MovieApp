@@ -7,6 +7,8 @@ function Movie({ title, poster, vote_average, vote_count, id }) {
 				<img
 					className="h-72 object-contain"
 					src={`https://image.tmdb.org/t/p/original${poster}`}
+					alt={title}
+					loading="lazy"
 				/>
 				<h2 className="text-center text-md font-bold p-1">{title}</h2>
 				<div className="text-sm">

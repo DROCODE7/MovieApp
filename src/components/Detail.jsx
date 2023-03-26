@@ -32,6 +32,7 @@ export default function Detail() {
 						className="rounded-2xl h-60"
 						src={`https://image.tmdb.org/t/p/original${data.poster_path}`}
 						alt={`${data.title}`}
+						loading="lazy"
 					/>
 					<div className="flex flex-col text-teal-400 space-y-4">
 						<h2 className="text-3xl p-2">{data.title}</h2>
